@@ -43,7 +43,7 @@ class GUI {
         f1.setIconImage(new ImageIcon("circle.jpg").getImage());
 
         // background image
-        f1.setContentPane(new JLabel(new ImageIcon("Untitled-1.jpg")));
+        f1.setContentPane(new JLabel(new ImageIcon("Untitled-2.jpg")));
 
         // labels
         JLabel l1 = new JLabel("Create Account");
@@ -410,7 +410,7 @@ class GUI {
         f1.setIconImage(new ImageIcon("circle.jpg").getImage());
 
         // background image
-        f1.setContentPane(new JLabel(new ImageIcon("Untitled-1.jpg")));
+        f1.setContentPane(new JLabel(new ImageIcon("Untitled-3.jpg")));
 
         // labels
         JLabel l1 = new JLabel("Bank Details");
