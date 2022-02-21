@@ -560,8 +560,8 @@ class GUI {
         // image
         JLabel i1 = new JLabel(new ImageIcon("under_line.jpg"));
         JLabel i2 = new JLabel(new ImageIcon("candle.jpg"));
-        JLabel i3 = new JLabel(new ImageIcon("candle.jpg"));
-        JLabel i4 = new JLabel(new ImageIcon("candle.jpg"));
+        JLabel i3 = new JLabel(new ImageIcon("candle_1.jpg"));
+        JLabel i4 = new JLabel(new ImageIcon("candle_2.jpg"));
         JLabel i5 = new JLabel(new ImageIcon("candle.jpg"));
 
         i1.setBounds(90,80,1020,1);
@@ -670,7 +670,7 @@ class GUI {
 
         // setting grid layout of 3 rows and 3 columns    
         f.setLayout(new GridLayout(8,2));    
-        f.setBounds(550, 150, 400, 500);   
+        f.setBounds(550, 100, 400, 500);   
         f.setVisible(true); 
     }
 
