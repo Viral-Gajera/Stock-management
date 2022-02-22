@@ -184,6 +184,7 @@ class GUI {
         b1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
+                boolean flag = true;
                 
                 if(tf1.getText().hashCode() == 0 || tf2.getText().hashCode() ==0 ){
                     System.out.println("Field can not be Empty");
@@ -196,18 +197,21 @@ class GUI {
                     for(int i=0; i<dataList.size(); i++){
                         String temp_email = dataList.get(i).email_address; 
                         String temp_passward = dataList.get(i).passward;
+
+                        System.out.println(temp_email);
+                        System.out.println(temp_passward);
                         
                         if(entered_email_address.equals(temp_email) && entered_passward.equals(temp_passward) ){
                             TempClient = dataList.get(i);
                             f2.setVisible(false);
                             frame5();
+                            flag = false;
                             break;
                         }
-                        else{
-                            JOptionPane.showMessageDialog(null, "Email or Passward Wrong!!!");
-                        }
                     }
-                    
+                    if(flag){
+                        JOptionPane.showMessageDialog(null, "Email or Passward Wrong!!!");
+                    }
                     
                 }
             }
